@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Style the container for the buttons */
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* Style the buttons */
+      .button {
+        background-color: #3051ff; /* Green */
+        border: none;
+        color: white;
+        padding: 4px 34px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        border-radius: 30px;
+      }
+
+      /* Style the active button */
+      .active {
+        background-color: #fff; /* Blue */
+        color: #3051ff;
+      }
+
+      /* Style the images */
+      .images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        gap: 30px;
+      }
+
+      .img00 {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 30px;
+        border-radius: 23px;
+        background: lightgray 50% / cover no-repeat;
+        transition: transform 0.2s;
+      }
+
+      .img00:hover {
+        transform: scale(1.1);
+      }
+
+      /* Show the images when the button is active */
+      .active + .images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        animation: fadein 0.5s;
+      }
+
+      /* Animation for fading in the images */
+      @keyframes fadein {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-2 col1">
+          <p class="p1">sattar:design</p>
+        </div>
+        <div class="col-2 col2">
+          <button class="btn button0">Contact</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container position">
+      <div class="row2">
+        <div class="col-2 col3">
+          <p class="p2">
+            Welcome to My Portfolio I’m <span>sattar</span>, and I’m a Graphic
+            Designer
+          </p>
+        </div>
+        <div class="col-2 col4">
+          <img src="Ellipse 1 (1).png" alt="" class="img" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container c1">
+      <div class="center">
+        <p class="p3">I DESIGN</p>
+      </div>
+      <div class="align">
+        <div class="d1">
+          <img src="Rectangle 2.png" alt="  " class="img1" />
+          <p class="i1">Logos</p>
+        </div>
+        <div class="d1">
+          <img src="Rectangle 3.png" alt="  " class="img1" />
+          <p class="i1">Packages</p>
+        </div>
+        <div class="d1">
+          <img src="Rectangle 37.png" alt="  " class="img1" />
+          <p class="i1">Websites</p>
+        </div>
+        <div class="d1">
+          <img src="Rectangle 4.png" alt="  " class="img1" />
+          <p class="i1">Prints & Posters</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container c2">
+      <div class="center">
+        <p class="p4">ABOUT ME</p>
+      </div>
+      <div class="align2">
+        <div class="p5">
+          <p class="effect1"></p>
+        </div>
+      </div>
+    </div>
+    <div class="paragraph">
+      <p class="paragraphp">LATEST PROJECTS</p>
+    </div>
+    <div class="containeri">
+      <div class="column">
+        <div class="rowimg">
+          <div class="imagei">
+            <div class="overlayi">
+              <p class="descriptioni">
+                Green Haven an eco-friendly<br />home goods store
+              </p>
+              <button class="buttoni" onclick="showLearnMore()">
+                Learn More
+              </button>
+            </div>
+            <img
+              src="cards/Green Haven Card.png"
+              alt="Image 1"
+              class="img000"
+            />
+          </div>
+          <div class="imagei">
+            <div class="overlayi">
+              <p class="descriptioni">Eskur company logo update<br />project</p>
+              <button class="buttoni" onclick="showLearnMore1()">
+                Learn More
+              </button>
+            </div>
+            <img src="cards/Eskur Card.png" alt="Image 2" class="img000" />
+          </div>
+        </div>
+        <div class="rowimg">
+          <div class="imagei">
+            <div class="overlayi">
+              <p class="descriptioni">
+                Burger restaurant web-design<br />project
+              </p>
+              <button class="buttoni" onclick="showLearnMore2()">
+                Learn More
+              </button>
+            </div>
+            <img src="cards/Burger card.png" alt="Image 3" class="img000" />
+          </div>
+          <div class="imagei">
+            <div class="overlayi">
+              <p class="descriptioni">
+                Panel natural soaps packages<br />design project
+              </p>
+              <button class="buttoni" onclick="showLearnMore3()">
+                Learn More
+              </button>
+            </div>
+            <img
+              src="cards/Panel soaps card.png"
+              alt="Image 4"
+              class="img000"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="learn-more-containeri">
+      <button class="back-buttoni" onclick="hideLearnMore()">
+        <img src="click/Group 1.png" alt="" class="learnicon" />
+      </button>
+      <div class="learn-more-contenti">
+        <div class="learn-more-imagei">
+          <img src="greenhaven/Rectangle 59 (2).png" alt="" class="learnimg" />
+          <img src="greenhaven/Rectangle 60 (1).png" alt="" class="learnimg" />
+          <img src="greenhaven/Rectangle 61 (1).png" alt="" class="learnimg" />
+          <img src="greenhaven/Rectangle 62 (1).png" alt="" class="learnimg" />
+        </div>
+        <!-- <p class="learn-more-descriptioni">Image 1 Description</p>
+        <div class="arrowi">&#8594;</div> -->
+      </div>
+    </div>
+
+    <div class="learn-more-containeri1">
+      <button class="back-buttoni" onclick="hideLearnMore1()">
+        <img src="click/Group 1 (1).png" alt="" class="learnicon1" />
+      </button>
+      <div class="learn-more-contenti">
+        <div class="learn-more-imagei1">
+          <img src="eskur/Rectangle 145.png" alt="" class="learnimg1" />
+          <img src="eskur/Rectangle 146.png" alt="" class="learnimg1" />
+          <img src="eskur/Rectangle 147.png" alt="" class="learnimg1" />
+          <img src="eskur/Rectangle 148.png" alt="" class="learnimg1" />
+        </div>
+        <!-- <p class="learn-more-descriptioni">Image 1 Description</p>
+        <div class="arrowi">&#8594;</div> -->
+      </div>
+    </div>
+    <div class="learn-more-containeri3">
+      <button class="back-buttoni" onclick="hideLearnMore3()">
+        <img src="click/Group 1 (1).png" alt="" class="learnicon1" />
+      </button>
+      <div class="learn-more-contenti">
+        <div class="learn-more-imagei3">
+          <div class="rowflex cv">
+            <img src="olive/Rectangle 149.png" alt="" class="learnimg3" />
+            <img src="olive/Rectangle 150.png" alt="" class="learnimg3" />
+          </div>
+          <div class="rowflex cv">
+            <img src="olive/Rectangle 151.png" alt="" class="learnimg3" />
+            <img src="olive/Rectangle 152.png" alt="" class="learnimg3" />
+          </div>
+          <div class="rowflex cv">
+            <img src="olive/Rectangle 153.png" alt="" class="learnimg3" />
+            <img src="olive/Rectangle 154.png" alt="" class="learnimg3" />
+          </div>
+          <div class="rowflex cv">
+            <img src="olive/Rectangle 155.png" alt="" class="learnimg3" />
+            <img src="olive/Rectangle 156.png" alt="" class="learnimg3" />
+          </div>
+        </div>
+        <!-- <p class="learn-more-descriptioni">Image 1 Description</p>
+        <div class="arrowi">&#8594;</div> -->
+      </div>
+    </div>
+    <div class="learn-more-containeri2">
+      <button class="back-buttoni" onclick="hideLearnMore2()">
+        <img src="click/Group 1 (1).png" alt="" class="learnicon2" />
+      </button>
+      <div class="learn-more-contenti">
+        <div class="learn-more-imagei2 .no-background">
+          <div class="rowflex">
+            <div class="flex1">
+              <img src="burger/Rectangle 141.png" alt="" class="learnimg2" />
+              <img src="burger/Rectangle 142.png" alt="" class="learnimg2" />
+            </div>
+            <img src="burger/Rectangle 140.png" alt="" class="learnimg2" />
+          </div>
+          <img src="burger/Rectangle 143.png" alt="" class="learnimg2i" />
+          <img src="burger/Rectangle 144.png" alt="" class="learnimg2i" />
+        </div>
+        <!-- <p class="learn-more-descriptioni">Image 1 Description</p>
+        <div class="arrowi">&#8594;</div> -->
+      </div>
+    </div>
+
+    <div class="paragraph">
+      <p class="paragraphp">MY WORKS</p>
+    </div>
+
+    <div class="container">
+      <button class="button b1" onclick="showAllImages()">All</button>
+      <button class="button b2" onclick="showImages('button1')">
+        Poster Design
+      </button>
+      <button class="button active b3" onclick="showImages('button2')">
+        Logo Design
+      </button>
+      <button class="button b4" onclick="showImages('button3')">
+        Packages Design
+      </button>
+      <button class="button b5" onclick="showImages('button4')">
+        Web-Design
+      </button>
+    </div>
+
+    <div class="container">
+      <div id="button1 " class="images image-container">
+        <img src="posters/Rectangle 59.png" class="img00 imgslide" />
+        <img src="posters/Rectangle 44.png" class="img00 imgslide" />
+        <img src="posters/Rectangle 45.png" class="img00 imgslide" />
+        <img src="posters/Rectangle 49.png" class="img00 imgslide" />
+        <img src="posters/Rectangle 50.png" class="img00 imgslide" />
+        <img src="posters/Rectangle 51.png" class="img00 imgslide" />
+        <img src="posters/Rectangle 52.png" class="img00 imgslide" />
+        <img src="posters/Rectangle 58.png" class="img00 imgslide" />
+        <img src="posters/Rectangle 54.png" class="img00 imgslide" />
+      </div>
+      <div id="button2" class="images">
+        <img src="logo/Rectangle 19.png" class="img00 imgslide" />
+        <img src="logo/Rectangle 20.png" class="img00 imgslide" />
+        <img src="logo/Rectangle 21.png" class="img00 imgslide" />
+        <img src="logo/Rectangle 74.png" class="img00 imgslide" />
+        <img src="logo/Rectangle 75.png" class="img00 imgslide" />
+        <img src="logo/Rectangle 76.png" class="img00 imgslide" />
+        <img src="logo/Rectangle 22.png" class="img00 imgslide" />
+        <img src="logo/Rectangle 23.png" class="img00 imgslide" />
+        <img src="logo/Rectangle 79.png" class="img00 imgslide" />
+      </div>
+      <div id="button3" class="images">
+        <img src="packages/Rectangle 60.png" class="img00 imgslide" />
+        <img src="packages/Rectangle 61.png" class="img00 imgslide" />
+        <img src="packages/Rectangle 62.png" class="img00 imgslide" />
+        <img src="packages/Rectangle 63.png" class="img00 imgslide" />
+        <img src="packages/Rectangle 64.png" class="img00 imgslide" />
+        <img src="packages/Rectangle 65.png" class="img00 imgslide" />
+        <img src="packages/Rectangle 66.png" class="img00 imgslide" />
+        <img src="packages/Rectangle 67.png" class="img00 imgslide" />
+        <img src="packages/Rectangle 68.png" class="img00 imgslide" />
+        <img src="packages/Rectangle 69.png" class="img00 imgslide" />
+        <img src="packages/Rectangle 70.png" class="img00 imgslide" />
+        <img src="packages/Rectangle 71.png" class="img00 imgslide" />
+        <img src="packages/Rectangle 72.png" class="img00 imgslide" />
+        <img src="packages/Rectangle 73.png" class="img00 imgslide" />
+        <img src="packages/Rectangle 34.png" class="img00 imgslide" />
+        <img src="packages/Rectangle 36.png" class="img00 imgslide" />
+        <img src="packages/Rectangle 35.png" class="img00 imgslide" />
+        <img src="packages/Rectangle 37 (1).png" class="img00 imgslide" />
+        <img src="packages/Rectangle 39.png" class="img00 imgslide" />
+        <img src="packages/Rectangle 38.png" class="img00 imgslide" />
+        <img src="packages/Rectangle 40.png" class="img00 imgslide" />
+      </div>
+      <div id="button4" class="images">
+        <img src="webdesign/Rectangle 25.png" class="img00 imgslide" />
+        <img src="webdesign/Rectangle 27.png" class="img00 imgslide" />
+        <img src="webdesign/Rectangle 29.png" class="img00 imgslide" />
+        <img src="webdesign/Rectangle 33.png" class="img00 imgslide" />
+        <img src="webdesign/Rectangle 32.png" class="img00 imgslide" />
+        <img src="webdesign/Rectangle 31.png" class="img00 imgslide" />
+        <img src="webdesign/Rectangle 26.png" class="img00 imgslide" />
+        <img src="webdesign/Rectangle 28.png" class="img00 imgslide" />
+        <img src="webdesign/Rectangle 30.png" class="img00 imgslide" />
+      </div>
+      <div id="lightbox"></div>
+    </div>
+
+    <div class="containercontact">
+      <div class="row">
+        <div class="colcon1">
+          <div class="colcon2">
+            <div class="contact">
+              <p class="contactp">Contact Information</p>
+              <div class="rowcontact">
+                <div class="col-contact">
+                  <img src="icons/bxs_phone-call.png" alt="" class="imgicon" />
+                </div>
+                <div class="col-contact2">
+                  <p>+964 750 212 4172</p>
+                </div>
+              </div>
+              <div class="rowcontact2">
+                <div class="col-contact">
+                  <img src="icons/ic_sharp-email.png" alt="" class="imgicon" />
+                </div>
+                <div class="col-contact2">
+                  <p>abdulsatar.design@gmail.com</p>
+                </div>
+              </div>
+              <div class="rowcontact3">
+                <div class="col-contact">
+                  <img
+                    src="icons/carbon_location-filled.png"
+                    alt=""
+                    class="imgicon"
+                  />
+                </div>
+                <div class="col-contact2">
+                  <p>Iraq, Kurdistan Resign - Duhok</p>
+                </div>
+              </div>
+              <div class="rowcontact4">
+                <div class="col-contact">
+                  <img
+                    src="icons/Group 1000001750.png"
+                    alt=""
+                    class="imgicon"
+                  />
+                </div>
+                <div class="col-contact2">
+                  <p>@sattar.design</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form class="form">
+            <div class="rowcontactc">
+              <div class="columnc">
+                <label for="text">First Name</label>
+                <input type="text" id="text" />
+              </div>
+              <div class="columnc">
+                <label for="text2">Last Name</label>
+
+                <input type="text" id="text2" />
+              </div>
+            </div>
+            <div class="rowcontactc3">
+              <div class="columnc">
+                <label for="email">Email</label>
+                <input type="email" id="email" />
+              </div>
+              <div class="columnc">
+                <label for="number">Phone Number</label>
+
+                <input type="tel" id="number" />
+              </div>
+            </div>
+            <div class="rowcontactc2">
+              <div class="columnc">
+                <label for="message">Message</label>
+                <textarea
+                  name=""
+                  id="message"
+                  cols="30"
+                  rows="10"
+                  placeholder="Write your message"
+                ></textarea>
+              </div>
+            </div>
+            <div class="rowcontactc2">
+              <div class="columnc">
+                <button class="btn2" type="submit">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="imgclick">
+      <img src="click/Group 1.png" alt="" class="click button01" />
+    </div>
+
+    <script>
+      // Get all the buttons
+      var buttons = document.querySelectorAll(".button");
+
+      // Add event listeners to each button
+      buttons.forEach(function (button) {
+        button.addEventListener("click", function () {
+          // Remove the active class from all buttons
+          buttons.forEach(function (button) {
+            button.classList.remove("active");
+          });
+
+          // Add the active class to the clicked button
+          this.classList.add("active");
+        });
+      });
+
+      // Function to show the images for a specific button
+      function showImages(buttonId) {
+        // Hide all images
+        var images = document.querySelectorAll(".images");
+        images.forEach(function (image) {
+          image.style.display = "none";
+        });
+
+        // Show the images for the clicked button
+        var buttonImages = document.getElementById(buttonId);
+        buttonImages.style.display = "flex";
+      }
+
+      // Function to show all images
+      function showAllImages() {
+        // Show all images
+        var images = document.querySelectorAll(".images");
+        images.forEach(function (image) {
+          image.style.display = "flex";
+        });
+      }
+    </script>
+    <script>
+      // Get the learn more container
+      var learnMoreContainer = document.querySelector(".learn-more-containeri");
+
+      // Function to show the learn more container
+      function showLearnMore() {
+        // Show the learn more container
+        learnMoreContainer.style.display = "flex";
+        // Get the clicked image
+        var image =
+          event.target.parentNode.parentNode.parentNode.querySelector("img");
+        // Set the background image of the learn more image
+        var learnMoreImage = document.querySelector(".learn-more-imagei");
+        learnMoreImage.style.backgroundImag = "url(" + image.src + ")";
+        // Get the description of the clicked image
+        //   var description =
+        //     event.target.parentNode.parentNode.parentNode.querySelector(
+        //       ".descriptioni"
+        //     ).textContent;
+        //   // Set the description on the learn more page
+        //   var learnMoreDescription = document.querySelector(
+        //     ".learn-more-descriptioni"
+        //   );
+        //   learnMoreDescription.textContent = description;
+      }
+
+      // Get the learn more container
+      var learnMoreContainer1 = document.querySelector(
+        ".learn-more-containeri1"
+      );
+
+      function showLearnMore1() {
+        // Show the learn more container
+        learnMoreContainer1.style.display = "flex";
+        // Get the clicked image
+        var image =
+          event.target.parentNode.parentNode.parentNode.querySelector("img");
+        // Set the background image of the learn more image
+        var learnMoreImage1 = document.querySelector(".learn-more-imagei1");
+        learnMoreImage1.style.backgroundImag = "url(" + image.src + ")";
+      }
+      // Get the learn more container
+      var learnMoreContainer2 = document.querySelector(
+        ".learn-more-containeri2"
+      );
+
+      function showLearnMore2() {
+        // Show the learn more container
+        learnMoreContainer2.style.display = "flex";
+        // Get the clicked image
+        var image =
+          event.target.parentNode.parentNode.parentNode.querySelector("img");
+        // Set the background image of the learn more image
+        var learnMoreImage2 = document.querySelector(".learn-more-imagei2");
+        learnMoreImage2.style.backgroundImag = "url(" + image.src + ")";
+      }
+      // Get the learn more container
+      var learnMoreContainer3 = document.querySelector(
+        ".learn-more-containeri3"
+      );
+
+      function showLearnMore3() {
+        // Show the learn more container
+        learnMoreContainer3.style.display = "flex";
+        // Get the clicked image
+        var image =
+          event.target.parentNode.parentNode.parentNode.querySelector("img");
+        // Set the background image of the learn more image
+        var learnMoreImage3 = document.querySelector(".learn-more-imagei3");
+        learnMoreImage3.style.backgroundImag = "url(" + image.src + ")";
+      }
+
+      // Function to hide the learn more container
+      function hideLearnMore() {
+        // Hide the learn more container
+        learnMoreContainer.style.display = "none";
+      }
+      function hideLearnMore1() {
+        // Hide the learn more container
+        learnMoreContainer1.style.display = "none";
+      }
+      function hideLearnMore2() {
+        // Hide the learn more container
+        learnMoreContainer2.style.display = "none";
+      }
+      function hideLearnMore3() {
+        // Hide the learn more container
+        learnMoreContainer3.style.display = "none";
+      }
+    </script>
+    <script src="move.js"></script>
+  </body>
+</html>

@@ -1622,14 +1622,11 @@ form {
   body {
     margin: auto;
     overflow-x: hidden;
-    margin-left: 150px;
   }
   .paragraph {
-    margin-left: -120px;
+    margin-left: -35px;
   }
-  .containeri {
-    margin-left: -20px !important;
-  }
+
   .learn-more-imagei2 {
     width: 600px;
     height: 600px;
@@ -1779,14 +1776,11 @@ form {
   body {
     margin: auto;
     overflow-x: hidden;
-    margin-left: 200px;
   }
   .paragraph {
-    margin-left: -200px;
+    margin-left: -70px;
   }
-  .containeri {
-    margin-left: -90px !important;
-  }
+
   .learn-more-imagei1 {
     margin-top: 20px;
   }
@@ -1855,7 +1849,7 @@ form {
     flex-direction: column;
     gap: 80px;
     min-height: 600px;
-    flex-basis: 400px;
+    width: 300px !important;
     font-size: 10px;
     margin-right: 0px;
     justify-content: center;
@@ -1959,14 +1953,11 @@ form {
   body {
     margin: auto;
     overflow-x: hidden;
-    margin-left: 250px;
   }
   .paragraph {
-    margin-left: -270px;
+    margin-left: -140px;
   }
-  .containeri {
-    margin-left: -160px !important;
-  }
+
   .learn-more-imagei1 {
     margin-top: -100px;
   }
@@ -2023,7 +2014,7 @@ form {
     flex-direction: column;
     gap: 80px;
     min-height: 600px;
-    flex-basis: 400px;
+    width: 200px !important;
     font-size: 10px;
     margin-right: 0px;
     justify-content: center;
@@ -2117,13 +2108,9 @@ form {
   body {
     margin: auto;
     overflow-x: hidden;
-    margin-left: 290px;
   }
   .paragraph {
-    margin-left: -300px;
-  }
-  .containeri {
-    margin-left: -195px !important;
+    margin-left: -100px;
   }
 
   .learn-more-imagei {

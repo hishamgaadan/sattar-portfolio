@@ -1874,7 +1874,8 @@ form {
     overflow-x: hidden;
   }
   .paragraph {
-    margin-left: -70px;
+    margin-top: 200px;
+    margin-left: -100px;
   }
 
   .learn-more-imagei1 {
@@ -2108,7 +2109,7 @@ form {
   }
 
   .container {
-    max-width: 500px;
+    max-width: 400px;
     text-align: center;
     margin-top: 50px;
     margin: 50px auto 0 auto;
@@ -2131,7 +2132,7 @@ form {
     flex-direction: column;
     gap: 80px;
     min-height: 600px;
-    width: 300px !important;
+    max-width: 350px !important;
     font-size: 10px;
     margin-right: 0px;
     justify-content: center;
@@ -2139,12 +2140,13 @@ form {
   }
   .p2 {
     font-size: 30px;
+    padding: 0 40px;
   }
   span {
     font-size: 30px;
   }
   .align {
-    flex-basis: 400px;
+    flex-basis: 300px;
     min-height: 1350px;
     flex-shrink: 0;
     border-radius: 50px;
@@ -2159,7 +2161,7 @@ form {
     margin-top: 100px;
   }
   .align2 {
-    width: 400px;
+    width: 300px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -2180,9 +2182,9 @@ form {
   }
 
   .p5 {
-    width: 400px;
+    width: 350px;
     word-wrap: break-word;
-    min-height: 400px;
+    min-height: 500px;
     flex-shrink: 0;
     border-radius: 50px;
     background: #3051ff;
@@ -2203,7 +2205,7 @@ form {
   .p4 {
     margin-right: auto;
     margin-left: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 200px !important;
   }
   .column {
     display: flex;
@@ -2220,7 +2222,7 @@ form {
     align-items: center;
     background-color: #3051ff; /* Blue */
     padding: 50px;
-    width: 400px;
+    width: 350px !important;
     height: 1550px;
     margin: 0 auto;
     border-radius: 50px;
@@ -2237,7 +2239,9 @@ form {
     overflow-x: hidden;
   }
   .paragraph {
-    margin-left: -140px;
+    margin-top: 300px;
+    margin-left: -120px;
+    font-size: 10px;
   }
 
   .learn-more-imagei1 {
@@ -2498,20 +2502,21 @@ form {
     flex-direction: column;
     gap: 80px;
     min-height: 600px;
-    width: 200px !important;
+    max-width: 300px !important;
     font-size: 10px;
     margin-right: 0px;
     justify-content: center;
     align-items: center;
   }
   .p2 {
-    font-size: 30px;
+    font-size: 25px;
+    padding: 0 70px;
   }
   span {
-    font-size: 30px;
+    font-size: 25px;
   }
   .align {
-    flex-basis: 400px;
+    flex-basis: 250px;
     min-height: 1350px;
     flex-shrink: 0;
     border-radius: 50px;
@@ -2526,7 +2531,7 @@ form {
     margin-top: 100px;
   }
   .align2 {
-    width: 400px;
+    width: 250px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -2537,9 +2542,9 @@ form {
   }
 
   .p5 {
-    width: 400px;
+    width: 300px;
     word-wrap: break-word;
-    min-height: 400px;
+    min-height: 600px;
     flex-shrink: 0;
     border-radius: 50px;
     background: #3051ff;
@@ -2577,7 +2582,7 @@ form {
     align-items: center;
     background-color: #3051ff; /* Blue */
     padding: 50px;
-    width: 400px;
+    width: 300px !important;
     height: 1550px;
     margin: 0 auto;
     border-radius: 50px;
@@ -2587,6 +2592,18 @@ form {
   .rowimg {
     margin-bottom: -20px;
   }
+  .imagei {
+    position: relative;
+    width: 250px;
+    height: 331px;
+    margin: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 50px;
+    border-radius: 50px;
+    background: 50% / cover no-repeat;
+    box-shadow: 0px 15px 4px 0px rgba(0, 0, 0, 0.25);
+  }
 }
 @media only screen and (max-width: 300px) {
   body {
@@ -2594,7 +2611,9 @@ form {
     overflow-x: hidden;
   }
   .paragraph {
-    margin-left: -100px;
+    margin-top: 300px;
+    margin-left: -180px;
+    font-size: -100px !important;
   }
 
   .learn-more-imagei {
@@ -2653,20 +2672,22 @@ form {
     flex-direction: column;
     gap: 80px;
     min-height: 600px;
-    flex-basis: 400px;
+    max-width: 230px !important;
     font-size: 10px;
     margin-right: 0px;
     justify-content: center;
     align-items: center;
+    margin-top: -50px;
   }
   .p2 {
-    font-size: 30px;
+    font-size: 20px;
+    padding: 0 130px;
   }
   span {
-    font-size: 30px;
+    font-size: 20px;
   }
   .align {
-    flex-basis: 400px;
+    flex-basis: 180px;
     min-height: 1350px;
     flex-shrink: 0;
     border-radius: 50px;
@@ -2681,7 +2702,7 @@ form {
     margin-top: 100px;
   }
   .align2 {
-    width: 400px;
+    width: 200px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -2692,9 +2713,9 @@ form {
   }
 
   .p5 {
-    width: 400px;
+    width: 250px;
     word-wrap: break-word;
-    min-height: 400px;
+    min-height: 800px;
     flex-shrink: 0;
     border-radius: 50px;
     background: #3051ff;
@@ -2715,7 +2736,7 @@ form {
   .p4 {
     margin-right: auto;
     margin-left: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 300px !important;
   }
   .column {
     display: flex;
@@ -2949,5 +2970,42 @@ form {
     line-height: normal;
     padding: 15px 48px;
     margin-right: -150px;
+  }
+  .column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+    margin-right: 25px;
+    flex-direction: column;
+  }
+  .containeri {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #3051ff; /* Blue */
+    padding: 50px;
+    width: 200px !important;
+    height: 1550px;
+    margin: 0 auto;
+    border-radius: 50px;
+    margin-top: 40px;
+    margin-bottom: 150px;
+  }
+  .rowimg {
+    margin-bottom: -20px;
+  }
+  .imagei {
+    position: relative;
+    width: 190px;
+    height: 331px;
+    margin: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 50px;
+    border-radius: 50px;
+    background: 50% / cover no-repeat;
+    box-shadow: 0px 15px 4px 0px rgba(0, 0, 0, 0.25);
   }
 }

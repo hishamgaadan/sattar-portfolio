@@ -868,9 +868,6 @@ form {
   cursor: pointer;
 }
 
-.image-container {
-  display:flex !important;
-}
 /* }
 
 #lightbox {

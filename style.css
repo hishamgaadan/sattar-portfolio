@@ -867,6 +867,10 @@ form {
 .button01 {
   cursor: pointer;
 }
+
+.image-container {
+  display:flex !important;
+}
 /* }
 
 #lightbox {
